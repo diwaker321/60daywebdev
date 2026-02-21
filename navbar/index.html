@@ -4,13 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar</title>
+    <style>
+
+      .header{
+        width: 100%;
+        border: 1px solid black;
+      }
+
+
+                                                  /* image style section start from here  */
+
+      .navImg{
+        /* border: 1px solid red; */
+        /* display: inline; never use this in your life */
+        display: inline-block;
+        width: 15%;
+        
+      }
+
+
+                                                  /* nav content style section start from here  */
+
+      .navcontent{
+        /* border: 1px solid black; */
+        /* display: inline; */
+        display: inline-block;
+      }
+
+      .navcontent > ul {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .navcontent > ul > li {
+        display: inline-block;
+        color: #003376;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 20px;
+      }
+
+      .midclass{
+        display: inline-block;
+        /* border: 1px solid red; */
+        width: 33%;
+      }
+      
+
+    </style>
   </head>
   <body>
-
     <div class="header">
-      <div class="navImg">
+      <div class="navImg " >
           <img src="./photos/logo.png" width="130px" height="40px" alt="logo image">
       </div>
+
+      <div class="midclass"></div>
   
       <div class="navcontent">
         <ul>
@@ -24,6 +75,8 @@
       </div>
 
     </div>
+
+
     
 
   </body>
