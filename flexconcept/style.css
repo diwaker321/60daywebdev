@@ -1,36 +1,50 @@
-
-body{
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-}
-.basicCss{
-    width: 100px;
-    height: 100px;
-    background-color: lightcoral;
-}
-
-.border{
+    .textcolor{
+        color: #3b5cbe;
+    }
+    .cursor{
+        cursor: pointer;
+    }
+    .navbarSection {
+    justify-content: space-around;
     border: 1px solid black;
-}
-
-/* this is bad  */
-/* .div1{
-    display: inline-block;
-}
-
-.div2{
-    display: inline-block;
-}
-
-.div3{
-    display: inline-block;
-} */
-
-.maindiv{
-    /* padding: 0px 10px; */
-    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px 0px;
     display: flex;
-    /* gap: 76vw; */
-}
+    align-items: center;
+    }
+
+    .logodiv {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      /* border: 1px solid black; */
+    }
+    .logoBox > span {
+    font-size: 17px;
+    padding: 3px 10px;
+      /* border: 1px solid #c63f60; */
+      background-color: #c63f60;
+      color: white;
+    }
+    .logoText > span{
+        font-size: 28px;
+    }
+
+
+        .contentdiv{
+        /* border: 1px solid black; */
+    }
+    .contentdiv > ul{
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .contentdiv > ul > li{
+        color: #636465;
+        font-size: 18px;
+        cursor: pointer;
+        
+    }

@@ -1,20 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <style>
+    .logindiv {
+      /* border: 1px solid; */
+      display: flex;
+      align-items: center;
+    }
 
-    <div class="maindiv">
-        <div class="div1 basicCss border"> box1</div>
-        <div class="div2 basicCss border">box2</div>
-        <div class="div3 basicCss border">box3</div>
+    .iconDiv {
+      width: 35px;
+      height: 35px;
+    }
+  </style>
+  <body>
+    <div class="mainDiv">
+      <!-- navbar section start from here  -->
+      <div class="navbarSection">
+        <div class="logodiv">
+          <div class="logoBox">
+            <span>/</span>
+          </div>
+          <div class="logoText">
+            <span>Axis</span> <span class="textcolor">Group</span>
+          </div>
+        </div>
+
+        <div class="contentdiv">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Plan</li>
+            <li>News & Updates</li>
+            <li>Financial Tools</li>
+            <li>More</li>
+          </ul>
+        </div>
+
+        <div class="logindiv">
+          <div class="iconDiv">
+            <img
+              src="./images/usericon.png"
+              width="100%"
+              height="100%"
+              alt=""
+            />
+          </div>
+          <div class="loginDiv textcolor cursor">Log in</div>
+        </div>
+      </div>
     </div>
-
-    <!-- <div class="navbar"></div> -->
-    
-</body>
+  </body>
 </html>
