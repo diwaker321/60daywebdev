@@ -1,0 +1,36 @@
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+.basicCss{
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+/* this is bad  */
+/* .div1{
+    display: inline-block;
+}
+
+.div2{
+    display: inline-block;
+}
+
+.div3{
+    display: inline-block;
+} */
+
+.maindiv{
+    /* padding: 0px 10px; */
+    justify-content: space-between;
+    display: flex;
+    /* gap: 76vw; */
+}
