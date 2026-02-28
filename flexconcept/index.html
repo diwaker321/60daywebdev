@@ -17,6 +17,63 @@
       width: 35px;
       height: 35px;
     }
+
+    .imgsection {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .heroSection {
+      position: relative;
+    }
+    .contentSection {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btnsection > P {
+      color: white;
+      padding: 10px 25px;
+      font-size: 18px;
+      display: flex;
+      width: fit-content;
+      background-color: #c63f60;
+      margin-top: 12px;
+    }
+
+    .ServiceSection {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      gap: 64px;
+      margin: 110px 0px;
+      background-color: #ffffff;
+    }
+
+    .serviceSectionContent {
+      display: flex;
+      flex-direction: column;
+      width: 38%;
+      gap: 20px;
+    }
+
+
+    .piechartImg {
+      width: 33%;
+      text-align: center;
+    }
+
+    .piechartImg > img {
+      object-fit: cover;
+    }
   </style>
   <body>
     <div class="mainDiv">
@@ -53,6 +110,52 @@
             />
           </div>
           <div class="loginDiv textcolor cursor">Log in</div>
+        </div>
+      </div>
+
+      <!-- hero section code is start from here  -->
+      <div class="heroSection">
+        <div class="imgsection">
+          <img
+            src="https://static.wixstatic.com/media/05e3dc_d76e10ffc7334f30944ded411e5c7418.jpg/v1/fill/w_1874,h_870,al_t,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/05e3dc_d76e10ffc7334f30944ded411e5c7418.jpg"
+            width="100%"
+            height="100%"
+            alt=""
+          />
+        </div>
+
+        <div class="contentSection">
+          <h1 style="font-size: 6rem; color: white">The Axis Group</h1>
+          <p style="font-size: 30px; color: white">
+            Financial Consulting. Let Us Do the Math.
+          </p>
+          <div class="btnsection">
+            <p>Get Started</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- service section code is start from here  -->
+
+      <div class="ServiceSection">
+        <div class="piechartImg">
+          <img
+            src="https://static.wixstatic.com/media/05e3dc_86ec3264502f48d48fb77851836f51f1.png/v1/fill/w_754,h_500,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/05e3dc_86ec3264502f48d48fb77851836f51f1.png"
+            alt=""
+            width="100%"
+          />
+        </div>
+        <div class="serviceSectionContent">
+          <h1>Our Services</h1>
+          <p>
+            I'm a paragraph. Click here to add your own text and edit me. I’m a
+            great place for you to tell a story and let your users know a little
+            more about you.
+          </p>
+
+          <div class="btnsection">
+            <p>Read More</p>
+          </div>
         </div>
       </div>
     </div>
