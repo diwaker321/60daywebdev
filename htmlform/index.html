@@ -4,53 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #divtest{
+            background-color: black;
+            width: 300px;
+            height: 400px;
+        }
+    </style>
 </head>
 <body>
     <h1>Student Record Form</h1>
 
-    <form action="./app.js">
-        <label for="name1">Your Name:</label>
-        <input type="text"placeholder="Enter your name" id="name1" name="Name"> <br> <br>
+    <form action="./app.js" autocomplete="on"   >
 
-        <label for="password">Your Password:</label>
-        <input type="password" placeholder="Enter Your password" id="password" name="password"> <br> <br>
+        <fieldset>
 
-        <!-- <label for="gender">Gender:</label> -->
-         <span>Enter Your Gender:</span>
+            <legend style="border: 1px solid black; border-radius: 50%; padding: 20px;"></legend>
 
-        <input type="radio" name="gen" id="male">
-        <label for="male">Male</label>
-
-        <input type="radio" name="gen" id="female">
-        <label for="female">Female</label>
-        
-        <input type="radio" name="gen" id="others">
-        <label for="others">Others</label> <br> <br>
-
-        <p>Choose Languages:</p>
-
-        <input type="checkbox" name="html" id="html">
-        <label for="html">HTML</label> <br>
-
-        
-        <input type="checkbox" name="css" id="css">
-        <label for="css">CSS</label> <br>
-        
-        <input type="checkbox" name="javascript" id="javascript">
-        <label for="javascript">JAVASCRIPT</label> <br>
-        
-        <input type="checkbox" name="react" id="react">
-        <label for="react">REACT</label> <br>
-        
-        <input type="checkbox" name="python" id="python">
-        <label for="python">PYTHON</label> <br>
-
-        <!-- <input type="button" value="Submit" name="" id=""> -->
-        <input type="submit" name="" id="">
-        <!-- <button onclick=>Login</button> -->
-
-
-    </form>
+            <label for="name1">Your Name:</label>
+            <input type="text"placeholder="Enter your name" id="name1" name="Name"  > <br> <br>
     
+            <label for="password">Your Password:</label>
+            <input type="password" placeholder="Enter Your password" id="password" name="password"> <br> <br>
+    
+             <span>Enter Your Gender:</span>
+    
+            <input type="radio" name="gen" id="male">
+            <label for="male">Male</label>
+    
+            <input type="radio" name="gen" id="female">
+            <label for="female">Female</label>
+            
+            <input type="radio" name="gen" id="others">
+            <label for="others">Others</label> <br> <br>
+    
+            <p>Choose Languages:</p>
+    
+            <input type="checkbox" name="html" id="html">
+            <label for="html">HTML</label> <br>
+    
+            
+            <input type="checkbox" name="html" id="css">
+            <label for="css">CSS</label> <br>
+            
+            <input type="checkbox" name="html" id="javascript">
+            <label for="javascript">JAVASCRIPT</label> <br>
+            
+            <input type="checkbox" name="html" id="react">
+            <label for="react">REACT</label> <br>
+            
+            <input type="checkbox" name="html" id="python">
+            <label for="python">PYTHON</label> <br> <br>
+    
+            <label for="lang">Select your fav. lang:</label>
+            <select name="languages" id="lang" >
+                <option value="" disabled selected>Select your lang</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="" >JS</option>
+                <option value="">REACT</option>
+                <option value="">PYTHON</option>
+            </select> <br> <br>
+    
+            <textarea name="ytDesc" id="ytDesc" rows="2" cols="32" placeholder="Enter your suggestions"></textarea> <br> <br>
+    
+            <input type="submit" name="" id="" value="submit your value">
+        </fieldset>
+
+    </form> 
 </body>
 </html>
