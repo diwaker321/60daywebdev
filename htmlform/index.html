@@ -1,76 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        #divtest{
-            background-color: black;
-            width: 300px;
-            height: 400px;
-        }
+      #divtest {
+        background-color: black;
+        width: 300px;
+        height: 400px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Student Record Form</h1>
 
-    <form action="./app.js" autocomplete="on"   >
+    <form action="./app.js" autocomplete="on">
+      <fieldset>
+        <legend
+          style="border: 1px solid black; border-radius: 50%; padding: 20px"
+        ></legend>
 
-        <fieldset>
+        <!-- <label for="name1">Your Name:</label>
+        <input
+          type="text"
+          placeholder="Enter your name"
+          id="name1"
+          name="Name"
+        />
+        <br />
+        <br />
 
-            <legend style="border: 1px solid black; border-radius: 50%; padding: 20px;"></legend>
+        <label for="password">Your Password:</label>
+        <input
+          type="password"
+          placeholder="Enter Your password"
+          id="password"
+          name="password"
+        />
+        <br />
+        <br />
 
-            <label for="name1">Your Name:</label>
-            <input type="text"placeholder="Enter your name" id="name1" name="Name"  > <br> <br>
-    
-            <label for="password">Your Password:</label>
-            <input type="password" placeholder="Enter Your password" id="password" name="password"> <br> <br>
-    
-             <span>Enter Your Gender:</span>
-    
-            <input type="radio" name="gen" id="male">
-            <label for="male">Male</label>
-    
-            <input type="radio" name="gen" id="female">
-            <label for="female">Female</label>
-            
-            <input type="radio" name="gen" id="others">
-            <label for="others">Others</label> <br> <br>
-    
-            <p>Choose Languages:</p>
-    
-            <input type="checkbox" name="html" id="html">
-            <label for="html">HTML</label> <br>
-    
-            
-            <input type="checkbox" name="html" id="css">
-            <label for="css">CSS</label> <br>
-            
-            <input type="checkbox" name="html" id="javascript">
-            <label for="javascript">JAVASCRIPT</label> <br>
-            
-            <input type="checkbox" name="html" id="react">
-            <label for="react">REACT</label> <br>
-            
-            <input type="checkbox" name="html" id="python">
-            <label for="python">PYTHON</label> <br> <br>
-    
-            <label for="lang">Select your fav. lang:</label>
-            <select name="languages" id="lang" >
-                <option value="" disabled selected>Select your lang</option>
-                <option value="HTML">HTML</option>
-                <option value="CSS">CSS</option>
-                <option value="" >JS</option>
-                <option value="">REACT</option>
-                <option value="">PYTHON</option>
-            </select> <br> <br>
-    
-            <textarea name="ytDesc" id="ytDesc" rows="2" cols="32" placeholder="Enter your suggestions"></textarea> <br> <br>
-    
-            <input type="submit" name="" id="" value="submit your value">
-        </fieldset>
+        <span>Enter Your Gender:</span>
 
-    </form> 
-</body>
+        <input type="radio" name="gen" id="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" name="gen" id="female" />
+        <label for="female">Female</label>
+
+        <input type="radio" name="gen" id="others" />
+        <label for="others">Others</label> <br />
+        <br /> -->
+
+        <p>Choose Languages:</p>
+
+        <input type="checkbox" name="html" id="html" />
+        <label for="html">HTML</label> <br />
+
+        <input type="checkbox" name="html" id="css" />
+        <label for="css">CSS</label> <br />
+
+        <input type="checkbox" name="html" id="javascript" />
+        <label for="javascript">JAVASCRIPT</label> <br />
+
+        <input type="checkbox" name="html" id="react" />
+        <label for="react">REACT</label> <br />
+
+        <input type="checkbox" name="html" id="python" />
+        <label for="python">PYTHON</label> <br />
+        <br />
+
+        <label for="lang">Select your fav. lang:</label>
+        <select name="languages" id="lang">
+          <option value="" disabled selected>Select your lang</option>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="">JS</option>
+          <option value="">REACT</option>
+          <option value="">PYTHON</option>
+        </select>
+        <br />
+        <br />
+
+        <textarea
+          name="ytDesc"
+          id="ytDesc"
+          rows="2"
+          cols="32"
+          placeholder="Enter your suggestions"
+        ></textarea>
+        <br />
+        <br />
+
+        <input type="submit" name="" id="" value="submit your value" />
+      </fieldset>
+
+      <fieldset>
+        <legend>06/03/2026</legend>
+
+        <!-- <input list="colors" />
+        <datalist id="colors">
+          <option value="red"></option>
+          <option value="green"></option>
+          <option value="blue"></option>
+        </datalist> -->
+
+        <label for="name1">Your Name:</label>
+        <input
+          type="text"
+          placeholder="Enter your name"
+          id="name1"
+          name="Name"
+          size="50"
+        />
+        <br />
+        <br />
+
+        <label for="password">Your Password:</label>
+        <input
+          type="password"
+          placeholder="Enter Your password"
+          id="password"
+          name="password"
+        />
+        <br />
+        <br />
+
+        <span>Enter Your Gender:</span>
+
+        <input type="radio" name="gen" id="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" name="gen" id="female" />
+        <label for="female">Female</label>
+
+        <input type="radio" name="gen" id="others" />
+        <label for="others">Others</label> <br />
+        <br />
+
+        <!-- <label for="">choose your birth date:</label>
+        <input type="date" name="" id="" min="2000-01-01" max="2010-12-31" > <br> <br>
+
+        <input type="month" min="2000-01-01" max="2010-12-31">
+        <input type="week" min="2000-01-01" max="2010-12-31"> -->
+
+        <!-- <label for="">Datetime:</label>
+        <input type="datetime" name="" id=""> -->
+
+        <!-- <input type="datetime-local" name="" id=""> -->
+        <!-- <input type="month" > -->
+
+        <!-- <input type="email" placeholder="enter your email">
+        <input type="tel" placeholder="enter your phone number">
+        <input type="number" placeholder="number" min="0"  max="5">
+        <label for="">Brightness Level: ( 0 to 100 ):</label>
+        <input type="range" min="0" max="100"> -->
+<!-- 
+        <label for="col">choose your color:</label>
+        <input id="col" type="color" name="usercolor"> <br> <br> -->
+        
+
+        <input type="file"   multiple>
+        <input type="image" src="../images/origimglogo.png" width="100px" alt="">
+        <input type="text" placeholder="this is only for read purpose" disabled >
+        <input type="button" value="button1" >
+        <input type="button" value="button2" >
+
+        <input type="text" placeholder="enter your first name " maxlength="15" minlength="2">
+
+
+
+
+        <!-- <input type="submit">
+        <input type="reset"> -->
+      </fieldset>
+    </form>
+    
+  </body>
 </html>
