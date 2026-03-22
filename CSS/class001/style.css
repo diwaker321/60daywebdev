@@ -1,0 +1,72 @@
+*{ /* this is a universal selector */
+     margin: 0;
+     padding: 0;
+    box-sizing: border-box; 
+}
+
+html{
+    height: 100%;
+    /*  font-color : red; */   /*this is wrong*/
+    color : red;
+}
+
+
+body{
+    border: 1px solid black;
+    /* height: 100%; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
