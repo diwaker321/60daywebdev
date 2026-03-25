@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>overflow and combinator</title>
+
+    <style>
+      /* " " , > , + , ~ */
+      /* p{
+            color: red;
+        } */
+
+      /* div p {
+        color: red;
+      } */
+
+      /* div > p {
+        color: red;
+      } */
+
+      /* div + p {
+        color: red;
+      } */
+
+      div ~ p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, soluta.
+      </p>
+      <section>
+        <p>Lorem, ipsum.</p>
+      </section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+        voluptas, ipsam molestias rerum est eveniet distinctio minus sed magnam
+        libero dignissimos quae, porro id deleniti odio placeat architecto
+        officia earum.
+      </p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>last p tag</p>
+    <span>Lorem ipsum dolor sit amet.</span>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit sapiente
+      reiciendis, id natus assumenda ut cum omnis nisi, mollitia, quisquam iusto
+      placeat minima itaque laboriosam ipsum! Illum quisquam dolorum quae?
+    </p>
+  </body>
+</html>

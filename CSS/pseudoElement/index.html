@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* html {
+        font-size: 15px;
+      } */
+      /* p {
+        font-size: 3rem;
+      } */
+      /* .para::first-letter{
+            color: red;
+            font-size: 40px;
+        }
+        .para::first-line{
+            color: purple; 
+        } */
+       .para::before{
+            content: "";
+            display: block;
+            height: 2px;
+            background-color: black;
+            width: 70px;
+         } 
+       .para::after {
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: black;
+        width: 0px;
+        transition: width 0.4s ease;
+      }
+
+      .para:hover::after {
+        width: 73px;
+      }
+      /* ::selection {
+        color: red;
+        background-color: aqua;
+      }  */
+
+      /* p::first-letter {
+        font-size: 60px;
+        color: red;
+      } */
+
+      /* p::first-line{
+        color: red;
+      } */
+      /* ::selection{
+        background-color: red;
+        color: white;
+      } */
+
+      /* ::marker{
+        color: red;
+        font-size: 50px;
+      } */
+
+      /* h1::after{
+        content: "FLIX";
+        color: blue;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <p class="para">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium
+      quibusdam vitae nisi sequi reiciendis ipsa, vero dolor, optio, facere
+      iusto amet suscipit minus nihil sed. Quo illum fugiat accusamus
+      consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Tempora debitis iure maxime doloribus culpa doloremque nisi obcaecati
+      numquam corrupti veniam qui exercitationem iste quasi vel eveniet facere,
+      dignissimos suscipit officia.
+    </p> -->
+
+    <p class="para">
+      hello world 
+    </p>
+
+    <!-- <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure unde error
+      incidunt enim a recusandae esse laborum? Quaerat veritatis maxime cum?
+      Eos, vel expedita cumque explicabo minus neque reiciendis esse! Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Doloremque adipisci
+      corporis fugiat neque nihil fuga mollitia voluptatibus saepe illum itaque
+      alias ad cupiditate, facilis repudiandae? Ipsum esse nihil quasi dolores!
+    </p> -->
+
+    <!-- <ul>
+      <li>list items</li>
+      <li>list items</li>
+      <li>list items</li>
+      <li>list items</li>
+      <li>list items</li>
+    </ul> -->
+    <!-- <h1>hello world</h1> -->
+    <h1>NET</h1>
+  </body>
+</html>
