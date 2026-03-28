@@ -64,6 +64,37 @@
         content: "FLIX";
         color: blue;
       } */
+
+      p::before{
+        /* content: "";
+        width: 77px;
+        height: 1px;
+        background-color: black;
+        display: block; */
+
+      }
+      p{
+        cursor: pointer;
+      }
+      p::after{
+        content: "";
+        width: 77px;
+        /* width: 0px; */
+        height: 1px;
+        background-color: black;
+        display: block;
+        /* display: none; */
+        transition: width 0.5s ease;
+      }
+
+      /* p:hover::after{
+        width: 77px;
+      } */
+      /* p:hover{
+        display: block;
+        background-color: black;
+
+      } */
     </style>
   </head>
   <body>
@@ -77,9 +108,9 @@
       dignissimos suscipit officia.
     </p> -->
 
-    <p class="para">
+    <!-- <p class="para">
       hello world 
-    </p>
+    </p> -->
 
     <!-- <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure unde error
@@ -98,6 +129,8 @@
       <li>list items</li>
     </ul> -->
     <!-- <h1>hello world</h1> -->
-    <h1>NET</h1>
+    <!-- <h1>NET</h1> -->
+
+    <p>hello coders</p>
   </body>
 </html>
