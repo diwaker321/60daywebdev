@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform</title>
+
+    <style>
+      div {
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+      }
+      .maindiv{ margin: auto;
+        background-color: rgb(49, 48, 48);
+      }
+      .innerdiv{
+        background-color: teal;
+        /* transform: translate(0px,0px); */
+        /* transform: rotate(20deg); */
+        /* transform: scale(2); */
+        /* transform: scale(2,4); */
+        transition: all 2s ease-in-out;
+        /* transform-origin: left center; */
+      }
+      .innerdiv:hover{
+        /* transform: translate(150px,100px); */
+        transform:perspective(20px)  rotateY(180deg);
+
+
+      }
+
+      .spinner{
+        width: 50px;
+        border-radius: 50%;
+        height: 50px;
+        /* border: 5px solid black; */
+        border-top: 5px solid black;
+        /* transition: all 2s linear; */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: diwaker 2s linear infinite reverse;
+      }
+      @keyframes diwaker{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+      }
+      /* @keyframes spin{
+
+      } */
+      .spinner:hover{
+        transform: rotate(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis modi
+      repudiandae sed, dolore harum quasi assumenda eaque iure laboriosam
+      nostrum sequi ullam voluptates magnam similique asperiores ipsum ipsam.
+      Doloribus, rerum!
+    </p>
+    <div class="maindiv">
+        <div class="innerdiv"> rotate content</div>
+    </div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, veniam?
+      Vitae in dolore aspernatur nesciunt, reprehenderit laborum culpa optio
+      pariatur numquam doloremque enim voluptate error illo itaque dolores
+      cupiditate molestiae!
+    </p>
+
+    <div class="spinner"></div>
+  </body>
+</html>
