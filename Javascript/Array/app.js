@@ -44,9 +44,9 @@
 
 //sorting
 
-let chararr = ["C", "A", "E", "F", "B"];
+// let chararr = ["C", "A", "E", "F", "B"];
 // let numarr = [ 5,4,3,2,1] //5,4,3,2,1
-let numarr2 = [5, 4, 3, 20, 10]; //20,10,5,4,3
+// let numarr2 = [5, 4, 3, 20, 10]; //20,10,5,4,3
 // console.log('numarr: ', numarr2.sort((a,b)=> a-b));
 // console.log('numarr: ', numarr.sort((a,b)=> a-b));
 // let result = [...numarr ,  ...numarr2]
@@ -76,13 +76,13 @@ let numarr2 = [5, 4, 3, 20, 10]; //20,10,5,4,3
 
 //arrayfrom method
 
-let text = "diwaker";
+// let text = "diwaker";
 // let arr = text.split("")
-let arr = Array.from(text)
+// let arr = Array.from(text)
 
-console.log('arr: ', arr);
-arr[0] = 'a'
-console.log('arr: ', arr.toString());
+// console.log('arr: ', arr);
+// arr[0] = 'a'
+// console.log('arr: ', arr.toString());
 
 // text[0] = 'a'
 // console.log('text[0]: ', text);
