@@ -68,11 +68,9 @@
 // console.log("newval: ", newval.flat(10).toString());
 // console.log('newval: ', newval.toString());
 
-
 // console.log('numarr: ', numarr2.sort());
 
 // console.log('chararr: ', chararr.sort());
-
 
 //arrayfrom method
 
@@ -92,4 +90,122 @@
 // console.log(Array.from(text).pop());
 // console.log(text.split(""));
 
+//continue from here -> 24/4/26
+// let sum = 0;
+// const number = [2, 4, 6, 1, 10, 30];
+// for(let i =0 ; i<number.length;i++){
+//     console.log(number[i]);
+// }
 
+// const arr = number.map((res) => {
+//     return console.log("res: ", res);
+// });
+
+// console.log('arr: ', arr);
+
+// const arr = number.map((val)=>{
+//     return sum+=val // sum = sum + val;
+// })
+
+// const arr = number.map((val)=> sum+=val)
+// console.log('arr: ', arr);
+
+// const cartSectionPrice = [299, 1299, 399, 999, 1200]
+// const cartSectionPrice = [
+//   {
+//     name: "phonecase",
+//     prize: "299",
+//   },
+//   {
+//     name: "shirt",
+//     prize: "1299",
+//   },
+//   {
+//     name: "charger",
+//     prize: "399",
+//   },
+//   {
+//     name: "headphones",
+//     prize: "1200",
+//   },
+// ];
+
+// const filterarr = cartSectionPrice.filter((res) => {
+//   if (res > 600) {
+//     return res;
+//   }
+// });
+// console.log("cartSectionPrice: ", cartSectionPrice);
+// const finalCart = cartSectionPrice.filter((res)=>{
+//     if(res.prize>600){
+//         return res
+//     }
+//     // console.log(res.prize);
+
+// })
+// console.log('finalCart: ', finalCart);
+
+// console.log("filterarr: ", filterarr);
+
+// let sum = 0;
+const number = [2, 4, 6, 1, 10, 30];
+// console.log(number.includes(60));
+console.log(number.some((val)=>{
+    // console.log('val: ', val);
+    return val%2==0; // ||
+
+}))
+
+console.log(number.every((val)=>{
+    // console.log('val: ', val);
+    return val%2==0; // &&
+
+}))
+
+// console.log(number.findIndex((val)=>{
+//     return val==6
+// }));
+
+
+
+
+
+// const arr = number.reduce((sum, val) => {
+//     return (sum += val); // acc = acc + curval
+// }, 0);
+// console.log('arr: ', arr);
+// rest , join , shift , unshift , map , filter , reduce , forEach , find , findindex, inludes , at , with , slice , splice , tospliced , reverse , toreverse , toSorted , some , every
+// console.log('at: ', number.at(2));
+// console.log('with: ', number.with(1,99));
+// console.log('reverse: ', number.reverse());
+// console.log('reverse: ', number.toReversed());
+// console.log('reverse: ', number.toSorted());
+
+// console.log('join: ', );
+
+// console.log(number.shift())
+// console.log('number: ', number);
+
+// console.log(number.toSpliced(0,2,"item1" , "item2" , "item3"))
+// console.log('number: ', number);
+
+// console.log(number.shift())
+// console.log('number: ', number);
+
+// console.log(number.unshift(1))
+// console.log('number: ', number);
+
+// console.log(number.slice())
+// const arr = number
+// const arr = number.slice()
+
+// console.log('arr: ', arr);
+// console.log('number: ', number);
+
+// function show(a,b , ...rest){
+//     console.log('a: ', a);
+//     console.log('b: ', b);
+//     console.log(rest);
+// }
+
+// show(1,2,3,4,5,6,7,8)
