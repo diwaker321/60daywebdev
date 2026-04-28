@@ -1,18 +1,18 @@
 //how to make objects
 
-const humanbody = {
-  name: "diwaker",
-  age: "18",
-  full_name:"diwaker dwivedi",
-  bodyParts: {
-    upperpart: "head",
-    lowerpart: "foot",
-  },
-  see: function () {
-    console.log("your eyes sees everything");
-  },
-  arr: [1, 2, 3, 4],
-};
+// const humanbody = {
+//   name: "diwaker",
+//   age: "18",
+//   full_name:"diwaker dwivedi",
+//   bodyParts: {
+//     upperpart: "head",
+//     lowerpart: "foot",
+//   },
+//   see: function () {
+//     console.log("your eyes sees everything");
+//   },
+//   arr: [1, 2, 3, 4],
+// };
 // console.log(humanbody.map((res) => console.log(res)));
 // const arr = [
 //   {
@@ -92,23 +92,23 @@ const humanbody = {
 //how to make nested object
 //role of this keyword in side object
 
-    let person = {
-    name: "diwaker",
-    age: 18,
+//     let person = {
+//     name: "diwaker",
+//     age: 18,
 
-    greet: function() {
-        console.log(this.age);
-    }
+//     greet: function() {
+//         console.log(this.age);
+//     }
     
-};
+// };
 
-person.saygoodmorning = function(){
-   console.log(this.name + " " + "good morning");
+// person.saygoodmorning = function(){
+//    console.log(this.name + " " + "good morning");
    
-}
-// console.log();
-person.greet()
-person.saygoodmorning()
+// }
+// // console.log();
+// person.greet()
+// person.saygoodmorning()
 
 
 
@@ -122,6 +122,42 @@ person.saygoodmorning()
 //  person.evegreet();
 
 // person.greet();
+
+
+const humanbody = {
+  name: "diwaker",
+  age: "18",
+  full_name:"diwaker dwivedi",
+  bodyParts: {
+    upperpart: "head",
+    lowerpart: "foot",
+  },
+  see: function () {
+    console.log("your eyes sees everything");
+  },
+  arr: [1, 2, 3, 4],
+};
+
+// console.log(Object.values(humanbody));
+// console.log(Object.entries(humanbody));
+// console.log(humanbody.hasOwnProperty("arr")); in
+
+
+// console.log(Object.keys(humanbody));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //tell some methods like Object.keys , .value ,Object.entries, in , hasOwnProperty etc
 
