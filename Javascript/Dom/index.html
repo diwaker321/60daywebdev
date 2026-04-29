@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wix studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <style>
+    /* .wixstudio {
+      display: flex;
+    } */
+
+    .logodiv {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .boxdiv {
+      width: 25px;
+      height: 25px;
+      background-color: black;
+    }
+    .wixstudioSection {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .templatediv {
+      background-color: #3910ed;
+      color: white;
+      border-radius: 20px;
+    }
+    .templatediv p {
+      margin: 0px;
+      padding: 13px;
+      font-size: 18px;
+    }
+    .logodiv p {
+      font-size: 20px;
+    }
+    .iconSize {
+      font-size: 28px;
+    }
+
+    .icondiv {
+      display: flex;
+      gap: 10px;
+    }
+    .labelSection p {
+      display: flex;
+      justify-content: center;
+      background-color: black;
+      color: white;
+      padding: 5px;
+    }
+    .iconSign {
+      font-size: 14px;
+    }
+    .rightdiv {
+      display: flex;
+      gap: 10px;
+    }
+    .loginSection {
+      display: flex;
+      justify-content: space-between;
+      /* border: 1px solid black; */
+      padding: 10px;
+    }
+    .leftdiv {
+      font-size: large;
+    }
+    .navbarsection {
+      display: flex;
+      margin: 10px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .search {
+      margin: 0px;
+      padding: 6px 20px;
+      justify-content: center;
+      /* background-color: white; */
+      border: 1px solid black;
+      border-radius: 20px;
+    }
+    .items {
+      display: flex;
+      gap: 18px;
+      cursor: pointer;
+    }
+    .items p ins {
+      color: blue;
+    }
+
+    .brandElectronic {
+      /* width: 50px; */
+      width: 100%;
+      /* height: 100%; */
+      object-fit: cover;
+      /* height: 50px; */
+    }
+    .product {
+      display: flex;
+      justify-content: space-between;
+      padding: 17px;
+    }
+    .leftproduct {
+      font-size: x-large;
+      font-weight: bold;
+    }
+    .rightproduct {
+      border: 1px solid black;
+      background-color: #1d74d7;
+      color: white;
+      border-radius: 20px;
+      margin: 0px;
+      padding: 6px 20px;
+    }
+    .productimg {
+      display: flex;
+      /* row-gap: ;  */
+      /* gap:  ; */
+    }
+
+    .cartimgSection {
+      /* width: 300px; */
+      /* border: 1px solid blue; */
+    }
+
+    .lowerSection {
+      /* border: 1px solid black; */
+      background-color: #fcfcfc;
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+    }
+    .cart1,
+    .cart2,
+    .cart3,
+    .cart4 {
+        border-radius: 10px;
+        /* background-color: red; */
+      /* border: 1px solid red; */
+    }
+    .borderRadius{
+        border-radius: 15px;
+    }
+
+    .hitlerimg{
+      /* border: 3px solid red; */
+      border-radius: 15px;
+    }
+
+  </style>
+  <body>
+    <!-- <div class="maincont">
+        <div class="wixstudio">
+            
+            <p><b>WIX</b> STUDIO</p>
+            </div>
+            <div class="icon"></div>
+            <div class="template">
+                <p>Edit Template</p></div>
+            </div>
+        
+    <div class="WS section"></div>
+    <div class="labels"></div>
+    <div class="login section"></div>
+    <div class="navbar section"></div>
+    </div> -->
+
+    <div class="maincont">
+      <div class="wixstudioSection">
+        <div class="logodiv">
+          <div class="boxdiv"></div>
+          <p><strong>WIX</strong> STUDIO</p>
+        </div>
+        <div class="icondiv">
+          <i
+            class="fa-solid fa-desktop iconSize"
+            style="color: rgb(13, 13, 13)"
+          ></i>
+          <i class="fa-solid fa-tablet iconSize"></i>
+          <i class="fa-solid fa-mobile-screen-button iconSize"></i>
+        </div>
+        <div class="templatediv"><p>Edit Template</p></div>
+      </div>
+      <div class="labelSection">
+        <p>Free Shipping Over $50 Worldwide</p>
+      </div>
+      <div class="loginSection">
+        <div class="leftdiv">
+          <span><strong>SMRT</strong></span>
+        </div>
+        <div class="rightdiv">
+          <span>login <i class="fa-solid fa-user iconSign"></i></span>
+          <i class="fa-solid fa-heart iconSign"></i>
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+      </div>
+      <hr />
+      <div class="navbarsection">
+        <div class="items">
+          <p>Mobile & Wearable Tech</p>
+          <p>Drones & Cameras</p>
+          <p>Headphones & Speakers</p>
+          <p>Computers</p>
+          <p>Tablets</p>
+          <p>TV & Home Cinema</p>
+          <p><ins>Call 123-456-7890</ins></p>
+        </div>
+        <div class="search">
+          <span
+            >Search <i class="fa-solid fa-magnifying-glass" iconSign></i
+          ></span>
+        </div>
+      </div>
+      <div class="brandElectronic">
+        <img
+          src="https://static.wixstatic.com/media/c837a6_00173c4a200f44269fa9acb29a36beaf~mv2.jpg/v1/fill/w_1883,h_1004,fp_0.49_0.52,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/templatesdrive_3d_models_of_8_products_edited.jpg"
+          height="100%"
+          width="100%"
+          alt=""
+        />
+      </div>
+
+      <div class="ProductSection">
+        <div class="product">
+          <div class="leftproduct">
+            <span>New Products</span>
+          </div>
+          <div class="rightproduct">
+            <span>View more</span>
+          </div>
+        </div>
+        <div class="lowerSection">
+          <div class="cart1">
+            <div class="cartimgSection">
+              <img
+              class="borderRadius"
+                src="https://static.wixstatic.com/media/c22c23_d4488c12f2bc40dfbd1bbd82956eb97a~mv2.png/v1/fill/w_423,h_564,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c22c23_d4488c12f2bc40dfbd1bbd82956eb97a~mv2.jpg"
+                width="100%"
+                alt=""
+              />
+            </div>
+            <div class="cartcontentSection">
+              <p style="font-weight: bold">
+                Round Mini Portable Bluetooth Speaker
+              </p>
+              <p>$85.00</p>
+            </div>
+          </div>
+          <div class="cart2">
+            <div class="cartimgSection">
+              <img
+              class="borderRadius"
+
+                src="https://static.wixstatic.com/media/c22c23_5ccf45bbbdf842e7955635610510f7c3~mv2.jpg/v1/fill/w_423,h_564,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c22c23_5ccf45bbbdf842e7955635610510f7c3~mv2.jpg"
+                
+                width="100%"
+                alt=""
+              />
+            </div>
+            <div class="cartcontentSection"></div>
+          </div>
+          <div class="cart3">
+            <div class="cartimgSection">
+              <img
+              class="borderRadius"
+
+                src="https://static.wixstatic.com/media/c22c23_7b3b59adc71d48aea694647bfb4385b8~mv2.jpg/v1/fill/w_423,h_564,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c22c23_7b3b59adc71d48aea694647bfb4385b8~mv2.jpg"
+                
+                width="100%"
+                alt=""
+              />
+            </div>
+            <div class="cartcontentSection"></div>
+          </div>
+          <div class="cart4">
+              <img
+              class="borderRadius"
+
+                src="https://static.wixstatic.com/media/c22c23_4567980aa0eb4bfba21b3706eaa8b2ca~mv2.jpg/v1/fill/w_423,h_564,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c22c23_4567980aa0eb4bfba21b3706eaa8b2ca~mv2.jpg"
+                
+                width="100%"
+                alt=""
+              />
+            </div>
+            <div class="cartcontentSection"></div>
+          </div>
+        </div>
+        <div>
+            <p></p>
+            <h1 id="head">hello world</h1>
+            <h1></h1>
+            <div>
+              <p id="para">Lorem ipsum dolor <span style="display: none;"> Lorem ipsum dolor sit amet.</span> sit amet consectetur adipisicing elit. Vitae, accusantium?</p>
+            </div>
+            <input type="text" id="Textinput">
+
+            <div class="demodiv"></div>
+            <div class="demodiv"></div>
+            <div class="demodiv"></div>
+            <div class="demodiv"></div>
+            <div class="demodiv"></div> 
+            <div class="demodiv"></div>
+            <img id="hitimg " src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Hitler_portrait_crop_%28cropped%29%282%29.jpg/500px-Hitler_portrait_crop_%28cropped%29%282%29.jpg" alt="">
+            <button id="btn">Click here</button>
+            
+        </div>
+        </div>
+    </div>
+  </body>
+
+  <!-- <script>
+    const elementone = document.getElementsByClassName("labelSection")
+    const input = document.getElementById("Textinput")
+      const Dummydiv = document.getElementById("demodiv")
+      // console.log('elementone: ', elementone);
+      const head = document.getElementById("hone")
+      head.classList.add("heading")
+      head.style.color="red"
+      head.style.border="1px solid black"
+      head.setAttribute("id","change")
+      head.getAttribute("id")
+
+      input.placeholder="Enter your name"
+      // input.setAttribute("width" , "50vw")
+      input.setAttribute("name" , "username")
+      const ul = document.createElement("ul")
+      ul.style.listStyleType="none"
+      for(let i =0 ; i<5;i++){
+        const li = document.createElement("li")
+        // li.setAttribute("class" , i);
+        li.classList.add(`item-${i}`)
+        li.innerText="This is new li items"
+
+        ul.appendChild(li)
+      }
+
+      for(let i =0 ; i<5;i++){
+        const li = document.getElementsByClassName(`item-${i}`)
+        // li.remove()
+        ul.removeChild(li)
+        // li.setAttribute("class" , i);
+        // li.classList.add(`item ${i}`)
+        // li.innerText="This is new li items"
+
+        // ul.appendChild(li)
+      }
+
+      
+
+
+      const div = document.createElement("div")
+      div.appendChild(ul)
+      document.body.appendChild(div)
+      // Dummydiv.appendChild(ul)
+    
+
+
+    
+    // const tagelement = document.getElementsByTagName("div")
+    // console.log('tagelement: ', tagelement);
+    // const covertedarr = Array.from(tagelement)
+    // console.log('covertedarr: ', covertedarr);
+  </script> -->
+
+  <script>
+    // const hitimg = document.getElementById("hitimg")
+    // hitimg.classList.add('hitlerimg' , 'hitler2' , 'hitler3')
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click" , ()=>{
+      console.log("btn has been clicked ander wala");
+    })
+      console.log("btn has been clicked bahar wala");
+
+    // console.log('hitimg: ', hitimg);
+    // hitimg.src="data:image/jpeg;base64,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"
+    hitimg.alt="maudi"
+    // hitimg.width="300"
+    // hitimg.style.width="100px"
+    hitimg.setAttribute("width" ,"200")
+    hitimg.setAttribute("height" , "100")
+    // console.log(hitimg.getAttribute("id"));
+    
+    // const icondiv = document.getElementsByClassName("demodiv")
+    // const icondiv2 = document.querySelector(".logodiv")
+    // const demodiv = document.querySelector("demodiv")
+    // const demodiv = document.querySelectorAll(".demodiv")
+    // console.log('demodiv: ', demodiv);
+
+    // const h1 = document.querySelector("#head")
+    
+    const h1 = document.getElementById("head")
+    // h1.innerHTML="<p>Diwaker </p>"
+    h1.innerHTML="<div>Diwaker</div>"
+    h1.style.backgroundColor = "black";
+
+    // console.log('h1: ', h1);
+    // const secondh1 = document.getElementById("head")
+    // console.log('secondh1: ', secondh1);
+
+    // console.log('demodiv: ', demodiv);
+    // console.log('icondiv2: ', icondiv2);
+    // console.log('icondiv: ', icondiv);
+    // const demodiv = document.getElementById("")
+
+    const div = document.getElementsByTagName("div")
+    // console.log('div: ', div );
+  </script>
+
+  </html>
