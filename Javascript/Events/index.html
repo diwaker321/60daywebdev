@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">Click Me</button>
+    <input type="text" id="name" placeholder="hello world" />
+<!-- 
+    <form id="form">
+      <input type="text" id="username" placeholder="Enter name" />
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- event propagation concept example -->
+
+    <div id="parent" style="padding: 40px; background: lightblue">
+      Parent
+      <button id="child">Click Me</button>
+    </div>
+  </body>
+  <script>
+    // const btn = document.getElementById("btn")
+    // const input = document.getElementById("name")
+    // btn.addEventListener("click", function (e) {
+    //   // console.log(e.target);
+    //   // console.log(e.target.value);
+    //   // console.log(e.type);
+    // });
+
+    // document.addEventListener("click", function(e){
+    //     console.log("X:", e.clientX);
+    //     console.log("X:", e.clientY);
+    // });
+
+    // document.addEventListener("mouseover", function(e){
+    //     console.log("X:", e.clientX);
+    //     console.log("X:", e.clientY);
+    // });
+    // document.getElementById("btn").onclick = function(){
+    //     alert("button is clicked")
+    // }
+    // const btn = document.getElementById("btn");
+    // const input = document.getElementById("name")
+    // const username = document.getElementById("username")
+    // const form = document.getElementById("form")
+    // form.addEventListener("submit",(event)=>{
+    //     event.preventDefault()
+    //     console.log(username.value);
+    // })
+
+    // btn.addEventListener("dblclick", function () {
+    //   alert("Clicked");
+    // });
+
+    
+    // btn.addEventListener("mouseover", function () {
+    //   // alert("singleclick")
+    //   console.log("hello");
+      
+    //   btn.style.background = "red";
+    //   btn.style.color = "white";
+
+    // });
+
+    // btn.addEventListener("mouseout",function(){
+    //   btn.style.background = "none";
+    //   btn.style.border="none"
+    //   btn.style.color = "black";
+    // })
+    // input.addEventListener("input" , ()=>{
+    //     console.log('input: ', input.value);
+    // })
+
+    // input.addEventListener("change" , ()=>{
+    //     console.log('input: ', input.value);
+    // })
+
+    // document.addEventListener("keydown",(event)=>{
+    //   // console.log('event: ', event.key);
+    //   console.log("key is pressed");
+    // })
+
+    //     document.addEventListener("mousemove",(event)=>{
+    //       console.log('event: ', event);
+    //       // console.log('x-coordinate: ', event.clientX);
+    //       // console.log('y-coordinate: ', event.clientY);
+
+    //   // console.log("key is pressed");
+    // })
+
+    //event propagation example script
+
+    const parent = document.getElementById("parent");
+    const child = document.getElementById("child");
+
+    
+    parent.addEventListener("click", () => {
+      console.log("Parent capturing");
+    });
+
+    // parent.addEventListener("click", () => {
+    //   console.log("Parent clicked");
+    // });
+
+    // child.addEventListener("click", (event) => {
+    //   console.log('event: ', event);
+    //   event.stopPropagation()
+    //   console.log("Child clicked");
+    // });
+
+    
+    child.addEventListener("click", (e) => {
+        console.log("Child clicked");
+        // e.stopPropagation()
+    });
+
+    
+  </script>
+</html>

@@ -14,8 +14,8 @@
 //how to make new element - using document.createelement()
 //how to append and remove  child using 
 //Parent / Child / Sibling
-// element.parentElement
 // element.children
+// element.parentElement
 // element.firstElementChild
 // element.lastElementChild
 // element.nextElementSibling
