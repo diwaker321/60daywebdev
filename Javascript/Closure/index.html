@@ -18,33 +18,40 @@
     //     return inner;
     // }
     // const incrementfunc = closurefunction()
+    // console.log('incrementfunc: ', incrementfunc);
+    // console.log('incrementfunc: ', incrementfunc());
+    // incrementfunc();
+    // incrementfunc();
     // console.log('incrementfunc: ', incrementfunc());
     // console.log('incrementfunc: ', incrementfunc());
-    // console.log('incrementfunc: ', incrementfunc());
 
 
-    // function secure(){
-    //     let count = 0 ; 
-    //     return {
-    //         increment : ()=>{
-    //             count++
-    //         },
-    //         getval : ()=>{
-    //             console.log(count);
-    //         }
-    //     }
-    // }
+    function secure(){
+        let count = 0 ; 
+        return {
+            increment : ()=>{
+                count++
+            },
+            getval : ()=>{
+                console.log(count);
+            }
+        }
+    }
 
-    // const show = secure();
-    // console.log('show: ', show);
-    // console.log('show: ', show.increment());
-    // console.log('show: ', show.increment());
-    // console.log('show: ', show.increment());
-    // console.log('show: ', show.increment());
-    // console.log('show: ', show.increment());
-    // console.log('show: ', show.increment());
+    const show = secure();
+    console.log('show: ', show);
+    console.log('show: ', show.increment());
+    console.log('show: ', show.increment());
 
-    // console.log('show: ', show.getval());
+
+    
+    console.log('show: ', show.increment());
+    console.log('show: ', show.increment());
+    console.log('show: ', show.increment());
+    console.log('show: ',
+     show.increment());
+
+    console.log('show: ', show.getval());
 
 
 

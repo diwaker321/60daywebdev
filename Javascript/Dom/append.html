@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="addbtn">Click here to add new p</p>
+    <p id="removebtn">click here to remove p</p>
+    
+</body>
+
+<script>
+    const addbtn = document.getElementById("addbtn")
+    const removebtn = document.getElementById("removebtn")
+
+    addbtn.addEventListener('click' , ()=>{
+        const p =document.createElement("p")
+        p.innerText="hello world"
+
+        document.body.appendChild(p)
+        p.addEventListener("click" , ()=>{
+            console.log("p clicked");
+            p.remove()
+            
+        })
+
+    })
+
+        removebtn.addEventListener('click' , ()=>{
+            const allp = document.querySelectorAll("p")
+            console.log('allp: ', allp);
+            if(allp.length>2){
+                allp[allp.length-1].remove()
+            }
+
+    })
+    // const div = document.createElement("div")
+    // div.appendChild(p)
+
+    
+</script>
+
+</html>
