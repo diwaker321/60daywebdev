@@ -18,7 +18,7 @@
 
 // show(10, 20, 30);
 
-//arrow function have argument object ?
+//arrow function have argument object ? (you can use rest operator in args)
 // let show = ()=>{
 //     console.log(arguments);
 // }
@@ -94,6 +94,8 @@
     //     console.log("hello");
         
     // }
+
+    //rest parameters in function
     
     // function sum (a, b,...rest){
     //     console.log('rest: ', rest);

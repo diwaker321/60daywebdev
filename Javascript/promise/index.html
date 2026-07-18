@@ -10,11 +10,115 @@
   </body>
   <script>
     //how to make a promise
+
+    // let payment = new Promise ((resolve , reject)=>{
+
+    //   //logic---> success -- true fail --> false
+    //   let status = true
+
+    //   setTimeout(()=>{
+    //     if(status){
+    //       resolve("payment has been done")
+    //     }else{
+    //       reject("playment declined")
+    //     }
+    //   },0)
+    // })
+
+    function payment() {
+      return new Promise((resolve, reject) => {
+        let status = true;
+
+        setTimeout(() => {
+          if (status) {
+            resolve("payment successfull");
+          } else {
+            reject("payemnt failed");
+          }
+        }, 1000);
+      });
+    }
+
+    function placeOrder() {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("order placed");
+        }, 1000);
+      });
+    }
+
+    function delivery() {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("order on the way");
+        }, 1000);
+      });
+    }
+
+    function done() {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve("orderd delivered successfully . thanks for shopping");
+        }, 1000);
+      });
+    }
+
+    // console.log('payment: ', payment);
+    // payment()
+    //   .then((res) => {
+    //     console.log(res);
+    //     return placeOrder();
+    //   })
+    //   .then((res) => {
+    //     console.log(res);
+    //     //code
+    //     return delivery();
+    //   })
+    //   .then((res) => {
+    //     console.log(res);
+
+    //     return done();
+    //   })
+    //   .then((res) => {
+    //     console.log(res);
+    //   })
+    //   .catch((err) => {
+    //     console.log("got some error", err);
+    //   });
+
+
+
+      // async/await
+
+      async function orderProcess(){
+        try{
+          const paymentres =await payment()
+          console.log('paymentres: ', paymentres);
+
+          const orderRes = await placeOrder()
+          console.log('orderRes: ', orderRes);
+
+          const deliveryres = await delivery()
+          console.log('deliveryres: ', deliveryres);
+
+          const doneRes = await done()
+          console.log('doneRes: ', doneRes);
+
+
+
+        }catch(err){
+          console.log('err: ', err);
+        }
+
+      }
+
+      orderProcess()
+
     // let promise = new Promise((resolve, reject) => {
 
     //   setTimeout(()=>{
     //     let success = true;
-  
+
     //     if (success) {
     //       resolve("successfully resolved");
     //     } else {
@@ -24,6 +128,14 @@
     // });
 
     //how to handle a promise using then and catch
+
+    // console.log('payment: ', payment);
+    // payment.then((res)=>{
+    //   console.log(res);
+    // }).catch((err)=>{
+    //   console.log('got some error' , err);
+    // })
+
     // promise
     //   .then((data) => {
     //     console.log(data);
@@ -32,15 +144,15 @@
     //     console.log(error);
     //   });
 
-      //another example of promise
-    function fetchData() {
-      const pr = new Promise((resolve, reject) => {
-        setTimeout(() => {
-          resolve("data has been fetch");
-        }, 2000);
-    });
-    return pr;
-    }
+    //another example of promise
+    // function fetchData() {
+    //   const pr = new Promise((resolve, reject) => {
+    //     setTimeout(() => {
+    //       resolve("data has been fetch");
+    //     }, 2000);
+    // });
+    // return pr;
+    // }
     // fetchData()
     //   .then((data) => {
     //     console.log("data: ", data);
@@ -49,22 +161,19 @@
     //     console.log(err);
     //   });
 
-      //promise chaining
-      fetchData().then((res)=>{
-          return res
-        }).then((data)=>{
-          console.log(data);
-        return console.log("hello"); 
-      }).then((pr)=>{
-        console.log(pr);
-      })
+    //promise chaining
+    // fetchData().then((res)=>{
+    //     return res
+    //   }).then((data)=>{
+    //     console.log(data);
+    //   return console.log("hello");
+    // }).then((pr)=>{
+    //   console.log(pr);
+    // })
 
     // console.log(a);
     // var a =10
     // console.log(a);
     // console.log('promise: ', promise);
-
-
-    
   </script>
 </html>
